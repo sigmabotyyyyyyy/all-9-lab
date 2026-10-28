@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Лабораторная работа №9: все 20 заданий трёх уровней по Fetch API и AJAX.">
+  <title>Лабораторная №9 · Fetch API / AJAX</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к заданию</a>
+  <header class="topbar">
+    <a class="brand" href="#variant-1" aria-label="Лабораторная работа 9, первое задание"><span class="brand-mark">{}</span><span>WEB LAB<span class="brand-sub">Языки и технология программирования</span></span></a>
+    <a class="report-link" href="report.html" target="_blank" rel="noopener">Открыть отчёт <span aria-hidden="true">↗</span></a>
+  </header>
+  <div class="page-heading">
+    <div><p class="eyebrow">ЛАБОРАТОРНАЯ РАБОТА №09</p><h1>Асинхронные запросы</h1><p class="page-intro">Fetch API и AJAX · Получение данных без перезагрузки страницы</p></div>
+    <div class="overview"><span><strong>03</strong>уровня</span><span><strong>20</strong>заданий</span><span><strong>GET</strong>REST API</span></div>
+  </div>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Выбор задания">
+      <div class="sidebar-heading"><h2>Задания</h2><span class="badge">01—20</span></div>
+      <div class="level-tabs" role="group" aria-label="Уровень сложности">
+        <button type="button" data-level="1" aria-pressed="true"><b>1</b> Базовый</button>
+        <button type="button" data-level="2" aria-pressed="false"><b>2</b> Средний</button>
+        <button type="button" data-level="3" aria-pressed="false"><b>3</b> Повышенный</button>
+      </div>
+      <p id="level-description" class="level-description"></p>
+      <nav id="variant-nav" aria-label="Варианты уровня"></nav>
+      <div class="sidebar-note"><span class="live-dot" aria-hidden="true"></span><div><strong>JSONPlaceholder</strong><p>Публичный учебный API.<br>Для загрузки нужен интернет.</p></div></div>
+    </aside>
+    <main id="main" class="main-area">
+      <div class="workspace-shell">
+        <header class="workspace-heading">
+          <div class="heading-tags"><span id="level-tag" class="badge accent"></span><span id="variant-tag" class="muted"></span></div>
+          <h2 id="variant-title"></h2><p id="variant-description"></p>
+          <div class="endpoint"><span>GET</span><code id="variant-endpoint"></code></div>
+        </header>
+        <div id="workspace"></div>
+      </div>
+      <section class="activity" aria-label="Журнал HTTP-запросов">
+        <div class="activity-header"><h2>Журнал запросов</h2><div class="activity-metrics"><span>Запросов <strong id="request-count">0</strong></span><span>Последний <strong id="response-time">—</strong></span></div></div>
+        <p class="hint">Счётчик и время ответа помогают увидеть, когда приложение обращается к серверу. Отменённые запросы отмечаются отдельно.</p>
+        <ol id="request-log" class="request-log" aria-label="Последние восемь запросов"><li class="log-placeholder">История появится после первого запроса.</li></ol>
+      </section>
+    </main>
+  </div>
+  <footer class="footer"><span>Лабораторная №9 · HTML / CSS / JavaScript</span><a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noopener noreferrer">Документация API ↗</a></footer>
+  <noscript><p class="noscript">Для лабораторной необходимо включить JavaScript в браузере.</p></noscript>
+</body>
+</html>
